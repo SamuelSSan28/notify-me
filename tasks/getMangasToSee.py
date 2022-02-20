@@ -2,7 +2,7 @@
 from prefect import Task
 from prefect.engine import signals
 from peewee import JOIN
-from models import Mangas,Site
+from manga_models import Mangas,Site
 
 class GetMangasToSee(Task):
 
