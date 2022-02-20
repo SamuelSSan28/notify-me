@@ -29,10 +29,8 @@ class ScrapingSite(Task):
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-gpu")
         options.add_argument("--disable-dev-shm-usage")
-        try:
-            driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
-        except Exception as err:
-            driver = webdriver.Chrome('./chromedriver.exe', options=options)
+        
+        driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
 
         driver.set_page_load_timeout(10000)
 
