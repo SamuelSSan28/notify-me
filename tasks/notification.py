@@ -8,7 +8,7 @@ import os
 class TelegramNotifications(Task):
 	def __init__(self,*args, **kwargs):
 		super(TelegramNotifications, self).__init__(*args, **kwargs)
-		env_values = dotenv_values("./env")
+		env_values = dotenv_values("./.env")
 		if len(env_values.keys()) > 1:
 			self.BOT_TOKEN = env_values['BOT_TOKEN']
 			self.GROUP_ID = env_values['GROUP_ID']
