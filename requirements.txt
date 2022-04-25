@@ -1,0 +1,5 @@
+selenium==3.141.0
+peewee==3.14.1
+prefect>=0.15.13
+webdriver-manager==3.5.3
+python-dotenv==0.19.2
